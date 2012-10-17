@@ -941,6 +941,9 @@
 				});
 			}
 
+      			var container = $(this);
+      			$("<span class=\"add-on\" onclick=\"jQuery('#"+ this[0].id +"').focus()\"><i class=\"icon-time\"></i></span>").insertAfter(container);
+
 			return $(this).each(function() {
 				$.fn.datetimepicker.apply($(this), tmp_args);
 			});
